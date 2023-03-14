@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var number=5;
+        console.log(number);// number:số nguyên, số thực
+        var name="tên";
+        console.log(name);//chuỗi:string
+        var age;
+        console.log(age);//undefined: không xác định, chưa có giá trị
+        var today = new date();
+        console.log(today);// kiểu đối tượng object,function,null
+        var a=5;
+        console.log(typeof a);//typeof là kiểu dữ liệu của biến a
+    </script>
+    <hr>
+    <script>
+        //1.số học:+-*/ **(lũy thừa) %(chia lấy dư) ()
+        //2.so sánh:==(so sánh bằng, so sánh giá trị thôi)!=(khác)>= <= ===(vừa so sánh giá trị và kiểu dữ liệu)
+        var a=5;
+        var b=6;
+        console.log(a==b);//false
+        console.log(a!=b);//true
+        console.log(a===b);//vừa so sánh giá trị và kiểu dữ liệu 
+        //3. logic:
+        //&&(và và) cả 2 điều kiện đúng thì đúng,1 trong 2 điều kiện sai thì sai
+        //||(hoặc) chỉ cần 1 cái đúng là nó sẽ đúng
+        // !(khác) phủ định
+        var a = true;
+        var b=false;
+        console.log(a&&b);//false
+        
+        var a = 5 == "5";//true
+        var b = 5 === "5";//false
+        var c = !b;// true
+        console.log((a||b) && c);//true 
+        //4. gán: += -= *= /= %= **=(số mũ)
+        let a = 5; 
+        console.log(a);
+        //a=10
+        a +=5; //a=a+5
+        console.log(a); //a=10
+        a%=2;// a = a %2
+        console.log(a);// a=0
+
+        //số mũ ^
+        let a = 2;
+        a ** = 3;
+        console.log(a);//a=2^3=8
+
+        let a = 5;
+        a++;//a = a+1 hậu tố: in ra giá trị a, trả về a ban đầu
+        //so sánh trước rồi cộng sau
+        console.log(a);// 6
+        ++a; //a = a+1 tiền tố: in ra a++
+        console.log(a);//7
+
+        let a = 5;
+        let b = ++a ==6;//
+        console.log(b);//true
+
+        let a = 5;
+        let b = a++ !==6;
+        console.log(b);//true
+        console.log(a);//6-->so sánh rồi cộng
+
+        let a= 5;
+        let b = a++ * 5+ --a*2;
+        //5*5+5*2=35((a++=5)lúc này a=6 nên --a=5)
+        console.log(a);//5
+        console.log(b);//35
+
+        //5. nối chuỗi
+        console.log(1 + 2 + "3" + 4 + 5);
+        // 3+"3"+4+5
+        //"33"+4+5
+        //"334"+5
+        //"33345"
+
+        var a= 5;// number
+        var b;//underfined
+        console.log(a+b);// NaN: không phải số
+
+
+       
+
+    </script>
+</body>
+</html>
