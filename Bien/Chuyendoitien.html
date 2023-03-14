@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+       <table>
+        <caption>
+            <h3>Chuyển đổi tiền tệ</h3>
+        </caption>
+       <tr>
+        <th>
+            <label for="Amount">Amount</label>
+        </th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+       </tr>
+       <tr>
+        <td>
+            <input type="text" id="Amount">
+        </td>
+        <td>
+            <select name="" id="From">
+                <option value="VND">VND</option>
+                <option value="USA">USA</option>
+            </select>
+           </td>
+       <td>
+        <select name="" id="To">
+            <option value="VND">VND</option>
+            <option value="USA">USA</option>
+        </select>
+       </td>
+       <td>
+        <button onclick="change()">Convert</button>
+       </td>
+       </tr>
+       <tr>
+        <td>
+            <p id="Result"></p>
+        </td>
+       </tr>
+       </table>
+   <script>
+function change(){
+    let Amount = document.getElementById("Amount").value;
+    let From = document.getElementById("From").value;
+    let To = document.getElementById("To").value;
+    let Result;
+    if(From=="USA" && To=="VND"){
+        Result="Result:" + (Amount*23000) + "VND";
+    }
+    else if(From=="VND" && To=="USA"){
+        Result="Result:" + (Amount/23000) + " USA";
+    }
+    else if(From=="VND"){
+        Result="Result:"+Amount+"VND";
+    }else {
+        Result="Result:"+Amount+"USA";
+    }
+    document.getElementById("Result").innerHTML=Result;
+}
+     </script>
+</body>
+</html>
