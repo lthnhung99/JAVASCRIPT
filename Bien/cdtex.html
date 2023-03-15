@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>
+                <input id="txt" type="text">
+            </td>
+            <td>
+                <select name="" id="from">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select name="" id="to">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <button type="button" onclick="chuyendoi()">Convert</button>
+            </td>
+        </tr>
+        
+        <script>
+            function chuyendoi() {
+                let amount = document.getElementById('txt').value;
+                let fromC = document.getElementById('from').value;
+                let toC = document.getElementById('to').value;
+                if(fromC=='VND' && toC=='VND') {
+                    alert(amount);
+                } else {
+                    if (fromC=='VND' && toC=='USD'){
+                       alert(amount/23000);
+                    }
+                }
+                if (fromC=='USD' && toC=='USD') {
+                    alert(amount);
+                } else {
+                    if (fromC=='USD' && toC=='VND') {
+                        alert(amount*23000);
+                    }
+                }
+            }
+        </script>
+    </table>
+</body>
+
+</html>
