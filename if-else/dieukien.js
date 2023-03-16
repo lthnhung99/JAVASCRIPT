@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+/**
+xếp lọai điểm học lực cấp 3
+
+
+
+ */
+=======
 let dtb = 15;
     if(dtb >= 8 && dtb < 10){
         console.log("Giỏi");
@@ -27,6 +35,7 @@ let dtb = 15;
     } else {
         console.log("Điểm không hợp lệ");
     }
+<<<<<<< HEAD
 
     switch (months=3) {
         case 1:

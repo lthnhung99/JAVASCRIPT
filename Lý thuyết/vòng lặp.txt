@@ -1,0 +1,31 @@
+14/03/2023
++ Từ khóa continue để làm gì
++ Tìm hiểu vòng lặp for, while, do/while
+
+
+1. continue để nhảy qua một phần cảu khối lệnh và bắt đầu dòng tiếp theo
+2. vòng lặp for:
+Cú pháp:
+for (lệnh khởi động vòng lặp đầu tiên; điều kiện tiếp diễn; lệnh kết thúc mỗi vòng lặp) {
+    // các đoạn mã được thực hiện lặp
+}
+- lệnh khởi động vòng lặp đầu tiên là câu lệnh được thực thi 1 lần ngay thời điểm vòng lặp bắt đầu. sử dụng câu lệnh này để khởi tạo giá trị cho các biến.
+
+- điều kiện tiếp diễn là điều kiện để thực thi vòng lặp.điều kiện này đúng thì mã bên trong vòng lặp mới được thực hiện. điều kiện sai thì vòng lặp sẽ kết thúc.
+
+- lệnh kết thúc mỗi vòng lặp là câu lệnh được thực hiện sau mỗi lần lặp 
+3. vòng lặp while:
+Cú pháp:
+while (điều kiện tiếp diễn) {
+    // đoạn mã được thực thi lặp đi lặp lại
+}
+
+- điều kiện tiếp diễn là điều kiện của vòng lặp.điều kiện đúng thì đoạn mã bên trong thân vòng lặp sẽ được thực thi.điều kiện sai thì vòng lặp sẽ kết thúc.
+4. Vòng lặp do-while
+Cú pháp:
+do {
+    // mã lặp
+}
+while (điều kiện tiếp diễn);
+- là điều kiện của vòng lặp.điều kiện này đúng thì vòng lặp tiếp tục thực thi.điều kiện này sai thì vòng lặp kết thúc.
+
